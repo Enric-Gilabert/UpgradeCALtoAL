@@ -1,0 +1,43 @@
+﻿{
+    "id":  "2cb085a3-1b88-4191-a986-db816f637ff5",
+    "name":  "CAL to AL Data Upgrade",
+    "publisher":  "BusinessCentralMVPs",
+    "brief":  "Upgrade C/AL data structure to AL data structure",
+    "description":  "Move data to Upgrade tables in C/AL and then from upgrade tables to App tables in AL",
+    "version":  "1.0.0.0",
+    "privacyStatement":  "",
+    "EULA":  "",
+    "help": "https://github.com/businesscentralal/UpgradeCALtoAL/wiki",
+    "url": "https://github.com/businesscentralal/UpgradeCALtoAL",
+    "logo":  "",
+    "target":  "Internal",
+    "showMyCode":  true,
+    "features":  [
+                     "TranslationFile"
+                 ],
+    "capabilities":  [
+
+                     ],
+    "dependencies":  [
+
+                     ],
+    "screenshots":  [
+
+                    ],
+    "contextSensitiveHelpUrl": "https://AL.com/help/",                    
+    "platform":  "14.0.0.0",
+    "application":  "14.0.0.0",
+    "test": "14.0.0.0",
+    "runtime": "3.0",
+    "idRanges":  
+                [
+                    {
+                    "from":  60600,
+                    "to":  60699
+                }
+                ,{
+                    "from":  68200,
+                    "to":  68299
+                }
+            ]    
+}

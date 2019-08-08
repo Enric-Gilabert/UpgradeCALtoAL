@@ -1,0 +1,19 @@
+{
+    "version":  "0.2.0",
+    "configurations":  [
+                           {
+                               "type":  "al",
+                               "request":  "launch",
+                               "name":  "Publish to local server",
+                               "server":  "http://DataUpgrade",
+                               "port":  7049,
+                               "tenant":  "Default",
+                               "serverInstance":  "NAV",
+                               "authentication":  "UserPassword",
+                               "startupObjectId":  60650,
+                               "startupObjectType":  "Page",
+                               "schemaUpdateMode":  "Recreate",
+                               "breakOnError": true
+                           }
+                       ]
+}

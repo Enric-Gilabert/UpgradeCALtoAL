@@ -1,0 +1,4 @@
+Export-NAVAppTableData -ServerInstance NAV -Tenant default -Path C:\host\Workspace\GIT\BusinessCentralAL\UpgradeCALtoAL\DataUpgrade\ExtensionData\Tab60650 -TableId 60650
+Export-NAVAppTableData -ServerInstance NAV -Tenant default -Path C:\host\Workspace\GIT\BusinessCentralAL\UpgradeCALtoAL\DataUpgrade\ExtensionData\Tab60651 -TableId 60651
+Export-NAVAppTableData -ServerInstance NAV -Tenant default -Path C:\host\Workspace\GIT\BusinessCentralAL\UpgradeCALtoAL\DataUpgrade\ExtensionData\Tab60652 -TableId 60652
+Export-NAVAppTableData -ServerInstance NAV -Tenant default -Path C:\host\Workspace\GIT\BusinessCentralAL\UpgradeCALtoAL\DataUpgrade\ExtensionData\Tab60653 -TableId 60653
