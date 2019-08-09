@@ -1,7 +1,7 @@
 ﻿{
     "id":  "2cb085a3-1b88-4191-a986-db816f637ff5",
     "name":  "CAL to AL Data Upgrade",
-    "publisher":  "BusinessCentralMVPs",
+    "publisher":  "Navision.guru",
     "brief":  "Upgrade C/AL data structure to AL data structure",
     "description":  "Move data to Upgrade tables in C/AL and then from upgrade tables to App tables in AL",
     "version":  "1.0.0.0",
