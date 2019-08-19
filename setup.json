@@ -1,7 +1,8 @@
 ﻿{
     "branchId":  "2cb085a3-1b88-4191-a986-db816f637ff5",
+    "dockerImage":  "mcr.microsoft.com/businesscentral/sandbox",
+    "dockerShared": true,
     "navSolution":  "W1",
-    "projectName":  "DataUpgrade",    
-    "navVersion":  "14.0.0.0",
-    "dockerImage":  "mcr.microsoft.com/businesscentral/onprem"
+    "projectName":  "bcsandbox",    
+    "navVersion":  "14.0.0.0"
 }
