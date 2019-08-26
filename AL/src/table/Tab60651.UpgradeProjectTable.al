@@ -22,8 +22,8 @@ table 60651 "Upgrade Project Table"
             var
                 ADVUpgradeProjMetadata: Codeunit "Upgrade Project Metadata";
             begin
-                if not ADVUpgradeProjMetadata.GetMetadataFields(Rec) then
-                    ADVUpgradeProjMetadata.GetAppTableFields(Rec);
+                ADVUpgradeProjMetadata.GetMetadataFields(Rec);
+                ADVUpgradeProjMetadata.GetAppTableFields(Rec);
                 CalcFields("App Table Name");
             end;
         }
@@ -142,5 +142,18 @@ table 60651 "Upgrade Project Table"
         JobQueueEntry.SetRange("Record ID to Process", RecordId());
         if JobQueueEntry.FindFirst() then
             Page.Run(PageMgt.GetDefaultCardPageID(Database::"Job Queue Entry"), JobQueueEntry);
+    end;
+
+    procedure UpdateMetadata()
+    var
+        ADVUpgradeProjMetadata: Codeunit "Upgrade Project Metadata";
+        ADVUpgradeProjFieldMgt: Codeunit "Upgrade Project Field Mgt.";
+        ADVUpgradeProjAct: Codeunit "Upgrade Project Action";
+    begin
+        DeleteFields(Rec);
+        ADVUpgradeProjMetadata.GetMetadataFields(Rec);
+        ADVUpgradeProjMetadata.GetAppTableFields(Rec);
+        ADVUpgradeProjFieldMgt.InitTableFields(Rec);
+        "Data Upgrade Method" := ADVUpgradeProjAct.SuggestDataUpgradeAction(Rec);
     end;
 }

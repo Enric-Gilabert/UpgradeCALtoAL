@@ -79,6 +79,22 @@ page 60651 "Upgrade Project Tables"
                 RunPageLink = "App Package Id" = field ("App Package Id"), "App Table Id" = field ("App Table Id");
                 ToolTip = 'Select or set up fields for data upgrade table.';
             }
+            action(RefreshSuggestion)
+            {
+                ApplicationArea = All;
+                Caption = 'Refrech Table Metadata';
+                Image = WorkCenterLoad;
+                Promoted = true;
+                PromotedCategory = Process;
+                PromotedOnly = true;
+                Scope = "Repeater";
+                ToolTip = 'Reloads table metadata and mapping.  Will remote previous mapping!';
+
+                trigger OnAction()
+                begin
+                    UpdateMetadata();
+                end;
+            }
             action("ExecuteDataUpgrade")
             {
                 ApplicationArea = All;
